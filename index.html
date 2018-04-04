@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metamask exmaple</title>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="js/contract.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="logo"><h4>Metamask example</h4></div>
+        </center>
+        <div id="info">
+            Your address: <span id="address">0x0000000000000000000000000</span> <br>
+            Last sender: <span id="lastSender">0x0000000000000000000000000</span> <br>
+            number: <span id="number">100</span> <br>
+        </div>
+        <div id="form" class="input-group-prepend">
+            <input type="number" id="input" class="form-control" >
+            <button id="submit" class="btn btn-primary">Send</button>
+            <button id="refresh" class="btn btn-primary">Refresh</button>
+        </div>
+
+        <div id="error" class="alert alert-danger hidden">
+            Please select Rinkeby network in metamask and reload the page!
+        </div>
+        <div id="success" class="alert alert-success hidden">
+            Transaction sended!
+        </div>
+        
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
